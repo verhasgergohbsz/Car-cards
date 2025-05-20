@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "Z:\\2024-25\\Asztalgyak\\carscardd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D89D951-FC4A-4FE9-84FB-16F11BA97C56}|CarCards\\CarCards.csproj|z:\\2024-25\\asztalgyak\\carscardd\\carcards\\end.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9D89D951-FC4A-4FE9-84FB-16F11BA97C56}|CarCards\\CarCards.csproj|solutionrelative:carcards\\end.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D89D951-FC4A-4FE9-84FB-16F11BA97C56}|CarCards\\CarCards.csproj|z:\\2024-25\\asztalgyak\\carscardd\\carcards\\start.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9D89D951-FC4A-4FE9-84FB-16F11BA97C56}|CarCards\\CarCards.csproj|solutionrelative:carcards\\start.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -27,18 +23,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "End.xaml",
-              "DocumentMoniker": "Z:\\2024-25\\Asztalgyak\\carscardd\\CarCards\\End.xaml",
-              "RelativeDocumentMoniker": "CarCards\\End.xaml",
-              "ToolTip": "Z:\\2024-25\\Asztalgyak\\carscardd\\CarCards\\End.xaml",
-              "RelativeToolTip": "CarCards\\End.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-20T11:23:13.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Start.xaml",
               "DocumentMoniker": "Z:\\2024-25\\Asztalgyak\\carscardd\\CarCards\\Start.xaml",
               "RelativeDocumentMoniker": "CarCards\\Start.xaml",
