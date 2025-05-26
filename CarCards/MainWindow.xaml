@@ -19,10 +19,20 @@
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
         <Button x:Name="BTÖssze" Content="Összehasonlít" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"  Width="98" Height="28" Margin="95.2,18,71.6,10"/>
-        <TextBlock x:Name="PlayerHead" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Márka" VerticalAlignment="Center" Margin="116,20,114.8,20.8"/>
-        <TextBlock x:Name="BotHead" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Márka" VerticalAlignment="Center" Grid.Column="2" Margin="115.4,20,115.981,20.8"/>
-        <Image x:Name="PlayerImage" HorizontalAlignment="Stretch" Height="100" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="BotImage" HorizontalAlignment="Stretch" Height="100" Margin="0,10,0,0" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Width="100"/>
-
+        <TextBlock x:Name="PlayerName" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="PlayerName" VerticalAlignment="Center" Margin="117,12,82.8,12.8" Width="65"/>
+        <TextBlock x:Name="Bot" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Bot" VerticalAlignment="Center" Grid.Column="2" Margin="115.4,20,115.981,20.8"/>
+        <Image x:Name="PlayerImage" HorizontalAlignment="Stretch" Height="100" Margin="0,50,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="BotImage" HorizontalAlignment="Stretch" Height="100" Margin="0,50,0,0" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Width="100"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+        <TextBlock x:Name="PlayerPoint" HorizontalAlignment="Center" Margin="-100,5,0,0" TextWrapping="Wrap" Text="Point" VerticalAlignment="Center" Grid.Column="1" Width="37" Height="19"/>
+        <TextBlock x:Name="BotPoint" HorizontalAlignment="Center" Margin="100,5,0,0" TextWrapping="Wrap" Text="Point" VerticalAlignment="Center" Grid.Column="1" Width="37" Height="19"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Márka" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Márka" VerticalAlignment="Top" Grid.Column="2"/>
+        <Button Content="Végsebesség" Margin="50,180,130,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Content="Lóerő" Margin="50,200,130,0"  Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Content="Súly" Margin="50,220,130,0"  Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Content="Gyorsulás" Margin="135,180,50,0"  Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Content="Térfogat" Margin="135,200,50,0"  Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Content="Nyomaték" Margin="135,220,50,0"  Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Window>
