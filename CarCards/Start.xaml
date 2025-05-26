@@ -8,15 +8,16 @@
         Title="Start" Height="350" Width="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="1*"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="115,80,0,0" Grid.Row="1" TextWrapping="Wrap" Text="PlayerName" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBox x:Name="PlayerName" HorizontalAlignment="Left" Height="23" Margin="90,140,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button x:Name="Startbutton" Content="Start" HorizontalAlignment="Left" Margin="105,250,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="PlayerName" />
+        <TextBox x:Name="PlayerName" HorizontalAlignment="Center" Height="23"  Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Grid.Column="0" BorderBrush="Black"/>
+        <Button x:Name="Startbutton" Content="Start" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Center" Width="75" Grid.Column="0"/>
 
     </Grid>
 </Window>

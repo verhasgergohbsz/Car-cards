@@ -8,16 +8,19 @@
         Title="End" Height="350" Width="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="1*"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="PlayerScore" HorizontalAlignment="Left" Margin="40,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Scoreplayer" VerticalAlignment="Top"/>
-        <TextBlock x:Name="BotScore" HorizontalAlignment="Left" Margin="200,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="ScoreBot" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="140,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text=":" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="110,130,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nyertél!" VerticalAlignment="Top"/>
-        <Button x:Name="EndButton" Content="Játék Vége" HorizontalAlignment="Left" Margin="100,220,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="PlayerScore" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Scoreplayer" VerticalAlignment="Center" Width="65" />
+        <TextBlock x:Name="BotScore" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="0" TextWrapping="Wrap" Text="ScoreBot" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="1"  Grid.Row="0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Result" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="Nyertél!" VerticalAlignment="Center"/>
+        <Button x:Name="EndButton" Grid.Column="1" Content="Játék Vége" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="75"/>
     </Grid>
 </Window>
