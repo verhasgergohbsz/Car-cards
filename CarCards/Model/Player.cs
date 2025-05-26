@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarCards
+namespace CarCards.Model
 {
-    internal class Player
+    public class Player
     {
         public string Name { get; set; }
         public int Points { get; set; }
         public List<Card> Cards { get; set; }
+
     }
 }

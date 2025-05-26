@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarCards
+namespace CarCards.Model
 {
-    internal class Bot
+    public class Bot
     {
         public int Points { get; set; }
         public List<Card> Cards { get; set; }
+
     }
 }

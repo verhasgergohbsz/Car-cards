@@ -55,12 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Bot.cs" />
-    <Compile Include="Card.cs" />
+    <Compile Include="DbAcces\DbCard.cs" />
     <Compile Include="End.xaml.cs">
       <DependentUpon>End.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Player.cs" />
+    <Compile Include="Model\Bot.cs" />
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\Player.cs" />
     <Compile Include="Start.xaml.cs">
       <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
