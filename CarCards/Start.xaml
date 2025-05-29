@@ -13,11 +13,13 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="115,80,0,0" Grid.Row="1" TextWrapping="Wrap" Text="PlayerName" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBox x:Name="PlayerName" HorizontalAlignment="Left" Height="23" Margin="90,140,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button x:Name="Startbutton" Content="Start" HorizontalAlignment="Left" Margin="105,250,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="PlayerName" VerticalAlignment="Center"/>
+        <TextBox x:Name="PlayerName" HorizontalAlignment="Center" Height="23" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <Button x:Name="Startbutton" Content="Start" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="75"/>
 
     </Grid>
 </Window>

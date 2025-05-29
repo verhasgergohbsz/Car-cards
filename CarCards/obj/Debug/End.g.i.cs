@@ -41,7 +41,7 @@ namespace CarCards {
     public partial class End : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 20 "..\..\End.xaml"
+        #line 22 "..\..\End.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock PlayerScore;
         
@@ -49,7 +49,7 @@ namespace CarCards {
         #line hidden
         
         
-        #line 21 "..\..\End.xaml"
+        #line 23 "..\..\End.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock BotScore;
         
@@ -57,7 +57,7 @@ namespace CarCards {
         #line hidden
         
         
-        #line 23 "..\..\End.xaml"
+        #line 25 "..\..\End.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock Result;
         
@@ -65,7 +65,7 @@ namespace CarCards {
         #line hidden
         
         
-        #line 24 "..\..\End.xaml"
+        #line 26 "..\..\End.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button EndButton;
         
