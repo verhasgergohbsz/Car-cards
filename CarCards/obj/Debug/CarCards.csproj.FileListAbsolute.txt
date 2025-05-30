@@ -79,3 +79,4 @@ D:\Car-cards\CarCards\bin\Debug\System.Memory.xml
 D:\Car-cards\CarCards\bin\Debug\System.Numerics.Vectors.xml
 D:\Car-cards\CarCards\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Car-cards\CarCards\obj\Debug\CarCards.csproj.CopyComplete
+D:\Car-cards\CarCards\obj\Debug\CarCards_Content.g.cs

@@ -19,10 +19,10 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="playerScore" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="Scoreplayer" VerticalAlignment="Center" Width="69"/>
-        <TextBlock x:Name="botScore" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="ScoreBot" VerticalAlignment="Center" Grid.Column="2"/>
+        <TextBlock x:Name="playerScore" HorizontalAlignment="Right" Grid.Row="0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center"  FontSize="40"/>
+        <TextBlock x:Name="botScore" HorizontalAlignment="Left" Grid.Row="0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Grid.Column="2" FontSize="40"/>
         <TextBlock HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center" Grid.Column="1"/>
-        <TextBlock x:Name="result" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="_nyertel/vesztettel" VerticalAlignment="Center" Grid.Column="1"/>
-        <Button x:Name="endButton" Content="Játék Vége" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="75" Grid.Column="1"/>
+        <TextBlock x:Name="result" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="result" VerticalAlignment="Center" Grid.Column="1" FontSize="30"/>
+        <Button x:Name="endButton" Content="Játék Vége" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="75" Grid.Column="1" Click="endButton_Click"/>
     </Grid>
 </Window>

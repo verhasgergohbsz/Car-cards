@@ -164,5 +164,10 @@
   <ItemGroup>
     <Folder Include="pictures\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="sounds\lose.wav" />
+    <Content Include="sounds\start.wav" />
+    <Content Include="sounds\win.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

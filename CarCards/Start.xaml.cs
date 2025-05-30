@@ -22,6 +22,14 @@ namespace CarCards
         public Start()
         {
             InitializeComponent();
+
+        }
+
+        private void startbutton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow(playerName.Text);
+            main.Show();
+            this.Close();
         }
     }
 }

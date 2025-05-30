@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarCards"
         mc:Ignorable="d"
-        Title="Card Game" Height="450" Width="800"
+        Title="Card Game" Height="600" Width="800"
         Background="AliceBlue">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,7 +14,7 @@
             <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
@@ -36,7 +36,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="3*"/><!--marka,tipus-->
                 <RowDefinition Height="2*"/><!--evjarat-->
-                <RowDefinition Height="10*"/><!--kep-->
+                <RowDefinition Height="15*"/><!--kep-->
                 <RowDefinition Height="2*"/><!--elso sor-->
                 <RowDefinition Height="2*"/><!--masodik sor-->
                 <RowDefinition Height="2*"/><!--harmadik sor-->
@@ -51,22 +51,22 @@
             <Image x:Name="playerKep" Margin="20" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
             
             <!--jatek adatok-->
-            <Button x:Name="vegsebesseg" Content="0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <Button x:Name="vegsebesseg" Content="0" Tag="Vegsebesseg" Click="AttributeButton_Click" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
             <TextBlock Text="km/h" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
 
-            <Button x:Name="gyorsulas" Content="0,0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <Button x:Name="gyorsulas" Content="0,0" Tag="Gyorsulas" Click="AttributeButton_Click" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
             <TextBlock Text="s" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
 
-            <Button x:Name="suly" Content="0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <Button x:Name="suly" Content="0" Tag="Suly" Click="AttributeButton_Click" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
             <TextBlock Text="kg" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
 
-            <Button x:Name="terfogat" Content="0" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <Button x:Name="terfogat" Content="0" Tag="Terfogat" Click="AttributeButton_Click" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
             <TextBlock Text="ccm" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
 
-            <Button x:Name="loero" Content="0" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <Button x:Name="loero" Content="0" Tag="Loero" Click="AttributeButton_Click" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
             <TextBlock Text="hp" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
 
-            <Button x:Name="nyomatek" Content="0" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <Button x:Name="nyomatek" Content="0" Tag="Nyomatek" Click="AttributeButton_Click" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
             <TextBlock Text="nm" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
 
         </Grid>
