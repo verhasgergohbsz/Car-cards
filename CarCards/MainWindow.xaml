@@ -9,21 +9,99 @@
         Background="AliceBlue">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="265*"/>
-            <ColumnDefinition Width="265*" />
-            <ColumnDefinition Width="264*" />
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="93*" />
-            <RowDefinition Height="134*" />
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="60*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
+        
+        <!--Scoreboard-->
+        <TextBlock x:Name="playerName" Text="player_name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <TextBlock Text="Bot" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <TextBlock x:Name="playerScore" Text="0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40"/>
+        <TextBlock Text=":" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <TextBlock x:Name="botScore" Text="0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="40"/>
+
+
+        <!--Player card-->
+        <Grid Grid.Column="0" Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/><!--marka,tipus-->
+                <RowDefinition Height="2*"/><!--evjarat-->
+                <RowDefinition Height="10*"/><!--kep-->
+                <RowDefinition Height="2*"/><!--elso sor-->
+                <RowDefinition Height="2*"/><!--masodik sor-->
+                <RowDefinition Height="2*"/><!--harmadik sor-->
+                <RowDefinition Height="1*"/><!--ures-->
+            </Grid.RowDefinitions>
+            <!--alap adatok-->
+            <TextBlock x:Name="playerMarka" Text="Márka" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+            <TextBlock x:Name="playerTipus" Text="Típus" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+            <TextBlock x:Name="playerEvjarat" Text="Évjárat" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,0"/>
+            <TextBlock x:Name="playerOrszag" Text="Ország" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock x:Name="playerUzemanyag" Text="Üzemanyag" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+            <Image x:Name="playerKep" Margin="20" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+            
+            <!--jatek adatok-->
+            <Button x:Name="vegsebesseg" Content="0" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <TextBlock Text="km/h" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+
+            <Button x:Name="gyorsulas" Content="0,0" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <TextBlock Text="s" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+
+            <Button x:Name="suly" Content="0" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <TextBlock Text="kg" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+
+            <Button x:Name="terfogat" Content="0" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <TextBlock Text="ccm" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+
+            <Button x:Name="loero" Content="0" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <TextBlock Text="hp" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+
+            <Button x:Name="nyomatek" Content="0" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="60"/>
+            <TextBlock Text="nm" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+
+        </Grid>
+        
+        <!--Bot card-->
+        <Grid Grid.Column="2" Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <!--marka,tipus-->
+                <RowDefinition Height="2*"/>
+                <!--evjarat-->
+                <RowDefinition Height="10*"/>
+                <!--kep-->
+                <RowDefinition Height="2*"/>
+                <!--elso sor-->
+                <RowDefinition Height="2*"/>
+                <!--masodik sor-->
+                <RowDefinition Height="2*"/>
+                <!--harmadik sor-->
+                <RowDefinition Height="1*"/>
+                <!--ures-->
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="botMarka" Text="Márka" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+            <TextBlock x:Name="botTipus" Text="Típus" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+            <TextBlock x:Name="botEvjarat" Text="Évjárat" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,0"/>
+            <TextBlock x:Name="botOrszag" Text="Ország" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock x:Name="botUzemanyag" Text="Üzemanyag" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"/>
+            <Image x:Name="botKep" Margin="20" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+        </Grid> 
+        <!--
         <Button x:Name="BTÖssze" Content="Összehasonlít" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="8"  Width="98" Height="28" Margin="95.2,19.2,71.6,12"/>
         <TextBlock x:Name="PlayerName" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="PlayerName" VerticalAlignment="Center"  Width="65" Height="16" Margin="100,36,99.8,40.8"/>
         <TextBlock x:Name="Bot" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Bot" VerticalAlignment="Center" Grid.Column="2"  Height="32" Width="22" Margin="126.4,30,115.6,30.8"/>
@@ -39,6 +117,6 @@
         <Button Content="Súly"  Grid.Row="4" VerticalAlignment="Top"  Grid.ColumnSpan="2" Height="19" Margin="0,1.8,264.6,0"/>
         <Button Content="Gyorsulás"   Grid.Row="7" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Height="19" Margin="0,0,264.6,0.2"/>
         <Button Content="Térfogat"  Grid.Row="6" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Height="19"  Margin="0,0.2,264.6,0"/>
-        <Button Content="Nyomaték"  Grid.Row="5" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Height="19"  Margin="0,1,264.6,0"/>
+        <Button Content="Nyomaték"  Grid.Row="5" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Height="19"  Margin="0,1,264.6,0"/>-->
     </Grid>
 </Window>
